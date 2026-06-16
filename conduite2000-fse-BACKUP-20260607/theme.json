@@ -1,0 +1,98 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": false,
+    "useRootPaddingAwareAlignments": false,
+    "color": {
+      "custom": true,
+      "customDuotone": false,
+      "customGradient": false,
+      "defaultDuotone": false,
+      "defaultGradients": false,
+      "defaultPalette": false,
+      "palette": [
+        { "slug": "red",      "color": "#C1272D", "name": "Rouge Conduite 2000" },
+        { "slug": "red-deep", "color": "#8a1c21", "name": "Rouge foncé" },
+        { "slug": "red-soft", "color": "#f4d6d7", "name": "Rouge doux" },
+        { "slug": "ink",      "color": "#0a0a0a", "name": "Encre" },
+        { "slug": "ink-2",    "color": "#1a1a1a", "name": "Encre secondaire" },
+        { "slug": "paper",    "color": "#fafaf7", "name": "Papier" },
+        { "slug": "muted",    "color": "#6b6b66", "name": "Gris atténué" }
+      ]
+    },
+    "typography": {
+      "customFontSize": true,
+      "defaultFontSizes": false,
+      "fontFamilies": [
+        {
+          "fontFamily": "'Bricolage Grotesque', 'Space Grotesk', sans-serif",
+          "name": "Bricolage Grotesque",
+          "slug": "bricolage-grotesque"
+        },
+        {
+          "fontFamily": "'Space Grotesk', system-ui, sans-serif",
+          "name": "Space Grotesk",
+          "slug": "space-grotesk"
+        },
+        {
+          "fontFamily": "'JetBrains Mono', ui-monospace, monospace",
+          "name": "JetBrains Mono",
+          "slug": "jetbrains-mono"
+        }
+      ],
+      "fontSizes": []
+    },
+    "spacing": {
+      "customSpacingSize": true,
+      "defaultSpacingSizes": false,
+      "blockGap": null,
+      "spacingSizes": []
+    },
+    "layout": {
+      "contentSize": "1240px",
+      "wideSize": "1400px"
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "#fafaf7",
+      "text": "#0a0a0a"
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--space-grotesk)",
+      "fontSize": "16px",
+      "lineHeight": "1.55"
+    },
+    "spacing": {
+      "blockGap": "0"
+    },
+    "elements": {
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--bricolage-grotesque)",
+          "fontWeight": "700",
+          "letterSpacing": "-0.025em",
+          "lineHeight": "1.02"
+        }
+      },
+      "link": {
+        "color": { "text": "inherit" },
+        "typography": { "textDecoration": "none" }
+      }
+    },
+    "blocks": {}
+  },
+  "customTemplates": [
+    {
+      "name": "front-page",
+      "title": "Page d'accueil Conduite 2000",
+      "postTypes": ["page"]
+    }
+  ],
+  "templateParts": [
+    { "name": "header", "title": "En-tête / Navigation", "area": "header" },
+    { "name": "footer", "title": "Pied de page",         "area": "footer" }
+  ],
+  "patterns": []
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Test model-viewer — Conduite 2000</title>
+<script type="module" src="https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js"></script>
+<style>
+  body { margin: 0; background: #f1ede5; display: flex; flex-direction: column; align-items: center; padding: 20px; font-family: sans-serif; }
+  h2 { margin-bottom: 8px; }
+  model-viewer {
+    display: block;
+    width: 600px;
+    height: 500px;
+    border: 3px solid red;
+    background: #ddd; /* fond gris visible = on voit que le viewer a des dimensions */
+    --progress-bar-color: #C1272D;
+    --progress-bar-height: 4px;
+  }
+  #log {
+    font-family: monospace; font-size: 14px;
+    margin-top: 10px; padding: 10px 16px;
+    border-radius: 8px; background: #fff; border: 1px solid #ccc;
+    min-width: 600px; max-width: 600px;
+  }
+  #log .ok  { color: green; }
+  #log .err { color: red; }
+  #log .info { color: #555; }
+</style>
+</head>
+<body>
+<h2>Test voiture 3D — Conduite 2000</h2>
+<p style="color:#555;font-size:13px">⚠️ Cette page doit être ouverte via <strong>http://localhost:9000/test-car.html</strong> (pas file://)</p>
+
+<model-viewer
+  id="mv"
+  src="assets/fiesta-conduite2000.glb"
+  alt="Test voiture"
+  camera-orbit="-25deg 80deg auto"
+  field-of-view="30deg"
+  shadow-intensity="1"
+  exposure="1"
+  environment-image="neutral"
+  loading="eager"
+  auto-rotate
+></model-viewer>
+
+<div id="log"><span class="info">En attente du chargement…</span></div>
+
+<script>
+const mv = document.getElementById('mv');
+const log = document.getElementById('log');
+
+function addLine(html) {
+  log.innerHTML += '<br>' + html;
+}
+
+// Vérifie si model-viewer est enregistré
+setTimeout(() => {
+  const defined = !!customElements.get('model-viewer');
+  addLine('<span class="' + (defined ? 'ok' : 'err') + '">'
+    + (defined ? '✅' : '❌') + ' custom element model-viewer : ' + (defined ? 'ENREGISTRÉ' : 'NON ENREGISTRÉ (CDN non chargé ?)')
+    + '</span>');
+}, 3000);
+
+mv.addEventListener('load', () => {
+  log.innerHTML = '<span class="ok">✅ Modèle chargé avec succès !</span>';
+  addLine('<span class="ok">  • viewer.loaded = ' + mv.loaded + '</span>');
+  addLine('<span class="ok">  • Dimensions : ' + mv.getBoundingClientRect().width.toFixed(0) + '×' + mv.getBoundingClientRect().height.toFixed(0) + 'px</span>');
+});
+
+mv.addEventListener('error', (e) => {
+  log.innerHTML = '<span class="err">❌ ERREUR : ' + JSON.stringify(e.detail) + '</span>';
+  addLine('<span class="err">  Vérifiez que vous ouvrez via http://localhost:9000/ et non file://</span>');
+});
+
+mv.addEventListener('progress', (e) => {
+  const pct = Math.round(e.detail.totalProgress * 100);
+  log.innerHTML = '<span class="info">⏳ Chargement GLB : ' + pct + '%</span>';
+});
+
+setTimeout(() => {
+  if (!mv.loaded) {
+    addLine('<span class="err">⚠️ Pas chargé après 15s. src=' + mv.getAttribute('src') + '</span>');
+    addLine('<span class="info">  Vérifiez la console pour des erreurs (F12)</span>');
+  }
+}, 15000);
+</script>
+</body>
+</html>
