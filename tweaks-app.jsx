@@ -207,6 +207,11 @@ function App() {
     // Heading scale
     css += `h1, .hero h1 {font-size:clamp(${48*t.headingScale/100}px, ${7.2*t.headingScale/100}vw, ${104*t.headingScale/100}px) !important;}`;
     css += `h2 {font-size:clamp(${36*t.headingScale/100}px, ${5*t.headingScale/100}vw, ${64*t.headingScale/100}px) !important;}`;
+    // Sur tablette/mobile, les clamp ci-dessus retombent à leur minimum (ou restent figés
+    // au-dessus de leur valeur plancher) : on leur redonne la même présence que dans
+    // styles.css, en gardant le slider headingScale proportionnel.
+    css += `@media (max-width:940px){ h2 {font-size:clamp(${48*t.headingScale/100}px, ${9*t.headingScale/100}vw, ${58*t.headingScale/100}px) !important;} h1, .hero h1 {font-size:clamp(${59*t.headingScale/100}px, ${9*t.headingScale/100}vw, ${68*t.headingScale/100}px) !important;} }`;
+    css += `@media (max-width:640px){ h1, .hero h1 {font-size:clamp(${39*t.headingScale/100}px, ${13*t.headingScale/100}vw, ${59*t.headingScale/100}px) !important;} }`;
 
     // Mono font
     const MONO_SEL = [
