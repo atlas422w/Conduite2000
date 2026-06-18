@@ -246,6 +246,225 @@ const MODAL_CONTENT = {
       </a>
     `,
   },
+
+  /* ---------- LABELLISATION ---------- */
+  lab1: {
+    eye: "Labellisation · 01",
+    title: "Formation préparatoire au permis B",
+    body: `
+      <p>Apprentissage anticipé de la conduite (<b>AAC</b>) et <b>conduite supervisée</b>.</p>
+
+      <h4>Horaires des cours théoriques</h4>
+      <ul>
+        <li>Mardi, mercredi, vendredi, samedi (matin et après-midi) — sur rendez-vous.</li>
+        <li>Jeudi matin sur rendez-vous ; jeudi après-midi de 18h15 à 19h15.</li>
+      </ul>
+
+      <h4>Formation post-permis</h4>
+      <ul>
+        <li><b>Pré-requis :</b> être titulaire du permis B.</li>
+        <li><b>Durée :</b> une journée (7 heures).</li>
+        <li><b>Suivi :</b> feuille d'émargement à la demi-journée.</li>
+        <li><b>Validation :</b> attestation de formation post-permis.</li>
+        <li><b>Dispensateur :</b> formateur diplômé BEPECASER ou titulaire du Titre professionnel d'enseignant de la conduite et de la sécurité routière.</li>
+        <li><b>Lieu :</b> au sein de l'auto-école Conduite 2000.</li>
+      </ul>
+
+      <div class="lab-note">
+        <b>Contexte :</b> label qualité défini par l'arrêté du 26 février 2018 portant création du label « Qualité des formations au sein des écoles de conduite », visant à proposer aux jeunes conducteurs des rendez-vous post-permis pour renforcer leurs acquis.
+      </div>
+
+      <h4>Programme de la journée</h4>
+      <ul>
+        <li>Accueil et présentation.</li>
+        <li>L'alcool : effets, conséquences, comportements préventifs, idées reçues, sanctions.</li>
+        <li>Drogues et médicaments : effets, conséquences, sanctions.</li>
+        <li>Distracteurs (téléphone, GPS) : sanctions.</li>
+        <li>Distances de sécurité et vitesse : comprendre, estimer, distance de freinage et d'arrêt, conséquences.</li>
+        <li>Conduite économique et respectueuse de l'environnement.</li>
+        <li>Exercices pratiques de conduite économique et apaisée.</li>
+        <li>Bilan de la journée.</li>
+      </ul>
+
+      <h4>Personnes concernées</h4>
+      <p>Tout jeune conducteur ayant obtenu le permis B depuis moins de 2 ans.</p>
+
+      <h4>Objectif</h4>
+      <p>Sensibiliser aux dangers de la route (alcool, stupéfiants, vitesse…) et à la conduite économique et écologique.</p>
+
+      <h4>Méthodes pédagogiques</h4>
+      <p>Cours théoriques et pratiques sur route, sur véhicule à double commande.</p>
+    `,
+  },
+
+  lab2: {
+    eye: "Labellisation · 02",
+    title: "Parcours de formation B",
+    body: `
+      <h4>Les cours théoriques</h4>
+      <p>Connaissance des règlements (circulation, conduite) et comportement du conducteur. L'entraînement au code est possible dans nos locaux (support DVD / ordinateur), en cours de code dirigés avec un enseignant, ou via internet avec le <b>Pass Rousseau</b>. Il porte sur :</p>
+      <ul>
+        <li>la vigilance et les attitudes envers les autres usagers ;</li>
+        <li>les effets de l'alcool, des drogues et des médicaments sur la conduite ;</li>
+        <li>l'influence de la fatigue ;</li>
+        <li>les risques liés à la météo et à l'état de la chaussée ;</li>
+        <li>les usagers vulnérables ;</li>
+        <li>les spécificités de certaines catégories de véhicules et les conditions de visibilité de leur conducteur ;</li>
+        <li>les gestes de premiers secours ;</li>
+        <li>les précautions en montant et en quittant le véhicule ;</li>
+        <li>le transport d'un chargement et de personnes ;</li>
+        <li>la réglementation : obligation d'assurance et documents administratifs.</li>
+      </ul>
+
+      <h4>Les cours thématiques</h4>
+      <p>Dispensés dans nos locaux par un enseignant titulaire d'une autorisation d'enseigner valide. Thématiques : alcool / drogues / médicaments, fatigue, vitesse, usagers vulnérables, contrats d'assurance.</p>
+
+      <h4>La formation pratique</h4>
+      <p>Conduite et sensibilisation aux risques, organisée autour de <b>4 compétences</b> à acquérir :</p>
+      <div class="comp-grid">
+        <div class="comp-card"><span class="cnum">1</span><p>Maîtriser le maniement du véhicule dans un trafic faible ou nul.</p></div>
+        <div class="comp-card"><span class="cnum">2</span><p>Appréhender la route et circuler en conditions normales.</p></div>
+        <div class="comp-card"><span class="cnum">3</span><p>Circuler en conditions difficiles et partager la route.</p></div>
+        <div class="comp-card"><span class="cnum">4</span><p>Pratiquer une conduite autonome, sûre et économique.</p></div>
+      </div>
+      <div class="lab-note">Chaque compétence est abordée via : le pourquoi, le comment, les risques, les influences de l'entourage et du mode de vie, les pressions de la société (publicité, travail…) et l'auto-évaluation.</div>
+    `,
+  },
+
+  lab3: {
+    eye: "Labellisation · 03",
+    title: "Enjeux & examen",
+    body: `
+      <h4>Enjeux et objectifs</h4>
+      <p>Le permis est un outil social indispensable pour beaucoup de jeunes (études, travail, loisirs). Les conducteurs débutants représentent une part trop importante des tués et blessés sur la route : l'effort de formation doit être poursuivi.</p>
+      <p>L'objectif de Conduite 2000 est d'amener chaque élève vers la réussite en transmettant <b>savoir-être, savoirs, savoir-faire et savoir-devenir</b>. Apprendre à conduire est une démarche éducative exigeante.</p>
+
+      <h4>Évaluation des progrès</h4>
+      <p>Grilles d'évaluation des savoirs comportementaux, techniques et environnementaux ; évaluations tout au long du parcours. Le <b>livret d'apprentissage</b> permet de suivre les progrès.</p>
+
+      <h4>Déroulement des épreuves</h4>
+      <p><b>Épreuve théorique :</b> QCM de 40 questions (connaissances réglementaires et savoirs utiles en conduite).</p>
+      <p><b>Épreuve pratique :</b> évaluée par l'inspecteur du permis de conduire et de la sécurité routière. L'élève doit :</p>
+      <ul>
+        <li>réaliser un parcours urbain / routier et / ou autoroutier ;</li>
+        <li>suivre un itinéraire ou rejoindre une destination en autonomie (~5 min) ;</li>
+        <li>réaliser des manœuvres ;</li>
+        <li>vérifier un élément technique intérieur / extérieur, répondre à une question de sécurité routière et à une question de premiers secours ;</li>
+        <li>appliquer le code (dont les limitations de vitesse propres aux élèves) ;</li>
+        <li>conduire en économie de carburant et limitation des gaz à effet de serre ;</li>
+        <li>faire preuve de courtoisie (usagers vulnérables).</li>
+      </ul>
+      <p>L'expert valorise les acquis plutôt que les faiblesses, dresse un inventaire des points positifs et négatifs, et retranscrit le bilan dans une grille.</p>
+      <div class="lab-note"><b>Arrêté du 17 novembre 2022 :</b> suppression de la limite de 5 présentations pratiques. L'ETG / ETM (ou sa dispense) est valide 5 ans par catégorie, quel que soit le nombre de présentations.</div>
+      <p style="margin-top:12px;"><b>Personnes en situation de handicap :</b> rendez-vous sur le site CEREMH pour plus d'informations.</p>
+    `,
+  },
+
+  lab4: {
+    eye: "Labellisation · 04",
+    title: "Règlement intérieur (Formation B – AAC)",
+    body: `
+      <p><b>Objet :</b> règles d'hygiène, de sécurité et de discipline ; applicable à tous les élèves, quelle que soit la catégorie.</p>
+      <div class="articles">
+        <div class="article"><div class="art-no">Article 1 · Enseignement</div><p>Enseignement selon les lois en vigueur, notamment l'arrêté relatif au REMC (en vigueur depuis le 01/07/2014). Évaluation initiale obligatoire, puis contrat de formation.</p></div>
+        <div class="article"><div class="art-no">Article 2 · Respect</div><p>Respecter : le personnel ; le matériel (ne pas mettre les pieds sur les chaises, ne pas se balancer, prendre soin des boîtiers, ne pas écrire sur les murs ou les chaises) ; les locaux (propreté) ; les autres élèves sans discrimination. Hygiène et tenue correctes exigées (pas de chaussures ne tenant pas le pied ni à forts talons). Interdiction de fumer dans l'établissement et les véhicules-écoles, ni de consommer ou d'avoir consommé alcool, drogue ou médicaments. Interdiction de manger ou boire en salle de code et dans les véhicules. Ne pas utiliser le matériel vidéo sans y être invité. Respecter les horaires de code et de conduite : au-delà de 20 min de retard, la leçon est annulée et non remboursée — sauf raisons valables (maladie, retard des transports publics, modification d'horaires de cours du lycée au dernier moment). Interdiction d'utiliser des appareils (MP3, téléphone) pendant le code. Ne pas parler pendant les cours.</p></div>
+        <div class="article"><div class="art-no">Article 3 · Dépistage</div><p>Élève soupçonné d'avoir consommé alcool ou stupéfiants : dépistage possible par l'enseignant (sous la responsabilité du directeur). Test positif ou refus : leçon annulée et facturée, convocation auprès du directeur.</p></div>
+        <div class="article"><div class="art-no">Article 4 · Accès salle de code</div><p>Pas d'accès à la salle de code sans dossier d'inscription constitué et versement réglé.</p></div>
+        <div class="article"><div class="art-no">Article 5 · Corrections</div><p>Rester jusqu'à la fin des corrections en séance de code.</p></div>
+        <div class="article"><div class="art-no">Article 6 · Annulation</div><p>Aucune leçon décommandée par répondeur ; les annulations se font pendant les heures d'ouverture du bureau.</p></div>
+        <div class="article"><div class="art-no">Article 7 · Téléphones</div><p>Téléphones éteints pendant le code et au volant.</p></div>
+        <div class="article"><div class="art-no">Article 8 · Affichage</div><p>Lire les informations affichées sur la porte de l'établissement.</p></div>
+        <div class="article"><div class="art-no">Article 9 · Livret d'apprentissage</div><p>Livret remis à la 1re leçon ; obligatoire (avec une pièce d'identité) en conduite. En cas de non-présentation aux forces de l'ordre, les conséquences sont imputables à l'élève.</p></div>
+        <div class="article"><div class="art-no">Article 10 · Examen pratique</div><p>Aucune présentation à l'examen pratique si le compte n'est pas réglé 24 h avant.</p></div>
+        <div class="article"><div class="art-no">Article 12 · Examen théorique</div><p>Inscription à l'examen théorique : tenir compte des conseils de l'enseignant (résultats aux examens blancs), puis s'inscrire seul ou via l'auto-école auprès d'un établissement privé.</p></div>
+        <div class="article"><div class="art-no">Article 13 · Inscription pratique</div><p>Programme terminé (4 compétences validées), avis favorable de l'enseignant, compte soldé.</p></div>
+        <div class="article"><div class="art-no">Article 14 · Sanctions</div><p>Par ordre d'importance : avertissement oral, avertissement écrit, exclusion provisoire, exclusion définitive.</p></div>
+        <div class="article"><div class="art-no">Article 15 · Exclusion</div><p>Exclusion possible pour : non-paiement ; attitude empêchant la formation ; inaptitude évaluée par le responsable pédagogique ; non-respect du règlement.</p></div>
+      </div>
+      <div class="lab-note">La direction et le personnel sont heureux de vous accueillir et vous souhaitent une excellente formation.</div>
+      <a class="pdf-link" href="#">
+        Règlement intérieur (PDF)
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      </a>
+    `,
+  },
+
+  lab5: {
+    eye: "Labellisation · 05",
+    title: "Évaluation de départ",
+    body: `
+      <p>Pour débuter la formation, une <b>évaluation des compétences d'une heure</b> est réalisée à bord du véhicule.</p>
+
+      <h4>I — Évaluation</h4>
+      <p>Elle permet de proposer un parcours de formation accompagné d'une proposition chiffrée.</p>
+
+      <h4>II — Items évalués</h4>
+      <ol class="eval-items">
+        <li>Renseignements généraux</li>
+        <li>Expérience de la conduite</li>
+        <li>Connaissance du véhicule</li>
+        <li>Attitude envers l'apprentissage et la sécurité</li>
+        <li>Habiletés</li>
+        <li>Compréhension et mémoire</li>
+        <li>Perception</li>
+        <li>Émotivité</li>
+        <li>Résultat de l'évaluation</li>
+        <li>Proposition : volume de formation prévisionnel</li>
+      </ol>
+
+      <h4>III — Moyen utilisé</h4>
+      <p>Fiche d'évaluation en 2 exemplaires, dont un remis à l'élève.</p>
+
+      <a class="pdf-link" href="#">
+        Fiche d'évaluation (PDF)
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+      </a>
+    `,
+  },
+
+  lab6: {
+    eye: "Labellisation · 06",
+    title: "Réclamations",
+    body: `
+      <p>Notre procédure garantit « un accompagnement rapide et personnalisé ». Trois voies sont possibles.</p>
+      <div class="reclam-grid">
+        <div class="reclam">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg></div>
+          <b>En présentiel</b>
+          <p>Le problème est réglé sur place si possible, sinon un rendez-vous vous est proposé.</p>
+          <div class="delay">RDV sous 15 jours</div>
+        </div>
+        <div class="reclam">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.9.36 1.78.7 2.6a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.48-1.27a2 2 0 0 1 2.11-.45c.82.34 1.7.57 2.6.7A2 2 0 0 1 22 16.92z"/></svg></div>
+          <b>Par téléphone ou e-mail</b>
+          <p>Nous vous recontactons par téléphone, ou un rendez-vous vous est proposé à l'auto-école.</p>
+          <div class="delay">sous 15 jours</div>
+        </div>
+        <div class="reclam">
+          <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg></div>
+          <b>Cahier des réclamations</b>
+          <p>Nous vous recontactons pour fixer un rendez-vous.</p>
+          <div class="delay">sous 15 jours</div>
+        </div>
+      </div>
+    `,
+  },
+
+  lab7: {
+    eye: "Labellisation · 07",
+    title: "Accessibilité & handicap",
+    body: `
+      <div class="handicap-box">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="4" r="2"/><path d="M19 13v-2a7 7 0 0 0-7-7 7 7 0 0 0-7 7v2M12 11v6m-4 4l4-4 4 4"/></svg></div>
+        <div>
+          <p><b>Une auto-école accessible à tous.</b> L'auto-école ne disposant pas de véhicules adaptés au handicap, rendez-vous sur <b>www.automobile.ceremh.org</b> pour trouver les auto-écoles adaptées et obtenir plus d'informations. Merci de votre compréhension.</p>
+          <a class="lab-link" href="https://www.automobile.ceremh.org" target="_blank" rel="noopener">Accéder au CEREMH
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </div>
+    `,
+  },
 };
 
 // ---------------- Modal logic ----------------
